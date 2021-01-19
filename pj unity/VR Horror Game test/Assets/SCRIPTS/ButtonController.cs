@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    private AudioSource source;
+   
+    private AudioSource message;
     public AudioClip phoneCall;
 
     private bool on = false;
@@ -16,13 +17,15 @@ public class ButtonController : MonoBehaviour
     private float buttonOriginalY;
 
 
-    private float buttonHitAgainTime = 0.5f;
+    private float buttonHitAgainTime = 7.0f;
     private float canHitAgain;
 
     // Start is called before the first frame update
     void Start()
     {
-        source = gameObject.AddComponent<AudioSource>();
+
+       
+        message = gameObject.AddComponent<AudioSource>();
         
         button = transform.GetChild(0).gameObject;
         buttonOriginalY = button.transform.position.y;
@@ -35,7 +38,7 @@ public class ButtonController : MonoBehaviour
     {
         if(buttonHit == true)
         {
-            source.PlayOneShot(phoneCall);
+            message.PlayOneShot(phoneCall);
 
             buttonHit = false;
 
