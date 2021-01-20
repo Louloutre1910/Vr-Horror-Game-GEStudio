@@ -4,25 +4,45 @@ using UnityEngine;
 
 public class Phone : MonoBehaviour
 {
+    private AudioSource audio1;
+    public AudioClip ring;
 
-    AudioSource phoneCall;
-
-    // Start is called before the first frame update
+    private AudioSource audio2;
+    public AudioClip call;
+    
     void Start()
     {
-        phoneCall = GetComponent<AudioSource>();
-        Invoke("playAudio", 10.0f);
+       audio1 = GetComponent<AudioSource>();
+       audio2 = GetComponent<AudioSource>();
        
+        Invoke("playRing", 5.0f);
+
     }
 
-    void playAudio()
+    void playRing()
     {
-        phoneCall.Play();
+        audio1.clip = ring;
+        audio1.Play();
+      
     }
 
-    // Update is called once per frame
-    void Update()
+    void update()
     {
         
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PlayerHand")
+        {
+            audio1.Stop();
+
+            audio2.clip = call;
+            audio2.Play();
+
+        }
+    }
+
+
+
 }
