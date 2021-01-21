@@ -8,6 +8,7 @@ TagManager:
   - Bouchon
   - Laundryspirit
   - PlayerHand
+  - Book
   layers:
   - Default
   - TransparentFX
