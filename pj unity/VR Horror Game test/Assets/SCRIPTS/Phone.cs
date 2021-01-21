@@ -13,7 +13,9 @@ public class Phone : MonoBehaviour
     void Start()
     {
        audio1 = GetComponent<AudioSource>();
+        audio1.loop = true;
        audio2 = GetComponent<AudioSource>();
+        
        
         Invoke("playRing", 5.0f);
 
@@ -36,7 +38,7 @@ public class Phone : MonoBehaviour
         if (other.gameObject.tag == "PlayerHand")
         {
             audio1.Stop();
-
+            audio1.loop = false;
             audio2.clip = call;
             audio2.Play();
 
