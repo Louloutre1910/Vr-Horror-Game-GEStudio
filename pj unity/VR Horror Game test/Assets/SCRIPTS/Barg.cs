@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Barg : MonoBehaviour
 {
@@ -15,18 +16,20 @@ public class Barg : MonoBehaviour
     {
         if (other.gameObject.tag == "Spa")
         {
-            GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1); 
+            GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1);
         }
-        else 
+        else
         {
-            StartCoroutine(DeathScene());
-            
+            if (other.gameObject.tag == "Book")
+            {
+                StartCoroutine(DeathScene());
+            }
         }
-    }
-    void DeathScene()
-    {
-        SceneManager.LoadScene("GameOver");
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Room1");
+        IEnumerator DeathScene()
+        {
+            SceneManager.LoadScene("Game Over");
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Room1");
+        }
     }
 }
