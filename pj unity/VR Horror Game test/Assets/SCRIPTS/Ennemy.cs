@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ennemy : MonoBehaviour
+public class Ennemy: MonoBehaviour
 {
     private int health = 5;
-    
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,12 +29,9 @@ public class Ennemy : MonoBehaviour
         GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1); //C#  }
         if (health <= 0)
         {
-            Die();
+            GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1); //C#  }
         }
     }
 
-    void Die()
-    {
-        Destroy(this);
-    }    
+    
 }
