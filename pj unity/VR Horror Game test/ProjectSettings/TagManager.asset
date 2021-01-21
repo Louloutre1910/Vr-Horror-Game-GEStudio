@@ -9,6 +9,7 @@ TagManager:
   - Laundryspirit
   - PlayerHand
   - Book
+  - Spa
   layers:
   - Default
   - TransparentFX
