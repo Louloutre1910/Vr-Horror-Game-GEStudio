@@ -10,6 +10,8 @@ TagManager:
   - PlayerHand
   - Book
   - Spa
+  - PlayerRightHand
+  - FirstLight
   layers:
   - Default
   - TransparentFX

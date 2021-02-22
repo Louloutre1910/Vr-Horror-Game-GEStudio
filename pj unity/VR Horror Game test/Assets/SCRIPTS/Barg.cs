@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Barg : MonoBehaviour
 {
+
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,7 @@ public class Barg : MonoBehaviour
         }
         IEnumerator DeathScene()
         {
-            SceneManager.LoadScene("Game Over");
+            Instantiate(gameOver.gameObject);
             yield return new WaitForSeconds(5);
             SceneManager.LoadScene("Room1");
         }
