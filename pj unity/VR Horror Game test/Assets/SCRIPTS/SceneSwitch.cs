@@ -13,7 +13,10 @@ public class SceneSwitch : MonoBehaviour
     {
        
         gameObject.tag = "RoomKey";
-    
+        gameObject.tag = "BureauKey";
+        gameObject.tag = "Room2Key";
+        gameObject.tag = "Room3Key";
+
     }
 
    void OnTriggerEnter(Collider other)
@@ -22,8 +25,24 @@ public class SceneSwitch : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-        
-        
+
+        if (other.gameObject.tag == "BureauKey")
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (other.gameObject.tag == "Room2Key")
+        {
+            SceneManager.LoadScene(2);
+        }
+
+        if (other.gameObject.tag == "Room3Key")
+        {
+            SceneManager.LoadScene(3);
+        }
+
+
+
     }
 
 }

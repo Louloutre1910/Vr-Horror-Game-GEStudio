@@ -12,6 +12,9 @@ TagManager:
   - Spa
   - PlayerRightHand
   - FirstLight
+  - BureauKey
+  - Room2Key
+  - Room3Key
   layers:
   - Default
   - TransparentFX
