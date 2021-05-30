@@ -19,6 +19,8 @@ public class Phone : MonoBehaviour
        
         Invoke("playRing", 5.0f);
 
+        
+
     }
 
     void playRing()
@@ -30,7 +32,7 @@ public class Phone : MonoBehaviour
 
     void update()
     {
-        
+       
     }
 
     void OnTriggerEnter(Collider other)
@@ -41,6 +43,8 @@ public class Phone : MonoBehaviour
             audio1.loop = false;
             audio2.clip = call;
             audio2.Play();
+
+            
 
         }
     }

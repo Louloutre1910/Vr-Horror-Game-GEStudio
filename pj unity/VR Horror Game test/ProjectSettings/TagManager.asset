@@ -15,6 +15,7 @@ TagManager:
   - BureauKey
   - Room2Key
   - Room3Key
+  - SceneHandler
   layers:
   - Default
   - TransparentFX

@@ -9,21 +9,15 @@ public class LocomotionController : MonoBehaviour
 {
     public XRController leftTeleportRay;
     public InputHelpers.Button teleportActivationButton;
-    public float activationThreshold = 0.001f;
-    private XRRayInteractor leftRayInteractor; 
-    private void Start()
-    {
-       
-        if (leftTeleportRay) 
-             leftRayInteractor = leftTeleportRay.gameObject.GetComponent<XRRayInteractor>(); 
-    }
+    public float activationThreshold = 0.1f;
+   
     
     // Update is called once per frame
     void Update()
     {
         if (leftTeleportRay)
         {
-            leftRayInteractor.allowSelect = CheckIfActivated(leftTeleportRay); 
+          
             leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
         }
         
