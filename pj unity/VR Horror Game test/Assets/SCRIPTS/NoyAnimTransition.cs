@@ -6,6 +6,10 @@ public class NoyAnimTransition : MonoBehaviour
 {
     public Transform player;
 
+    public float attackDistance;
+    public float CalmDistance;
+   
+
     private Animator animnoy;
 
     private int health = 5;
@@ -19,7 +23,20 @@ public class NoyAnimTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Alert
+        if (Vector3.Distance(player.position, transform.position) < attackDistance)
+        {
+            Debug.Log("Chara closed");
+            animnoy.SetBool("IsAttack", true);
+            animnoy.SetBool("IsCalm", false);
+        }
+
+        if (Vector3.Distance(player.position, transform.position) > attackDistance)
+        {
+            Debug.Log("Chara far");
+            animnoy.SetBool("IsAttack", false);
+            animnoy.SetBool("IsCalm", true);
+        }
 
     }
 
@@ -29,7 +46,7 @@ public class NoyAnimTransition : MonoBehaviour
         if (other.gameObject.tag == "Book")
         {
             Debug.Log("YES degat");
-            animnoy.Play("Scene 2");
+            animnoy.Play("Degat");
 
             StartCoroutine(GetDamage());
         }
@@ -47,7 +64,7 @@ public class NoyAnimTransition : MonoBehaviour
 
         if (health <= 0)
         {
-            animnoy.Play("Scene 3");
+            animnoy.Play("Mort");
         }
     }
     
