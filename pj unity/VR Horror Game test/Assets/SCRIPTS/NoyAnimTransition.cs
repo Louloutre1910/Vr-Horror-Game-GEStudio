@@ -27,16 +27,17 @@ public class NoyAnimTransition : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) < attackDistance)
         {
             Debug.Log("Chara closed");
-            animnoy.SetBool("IsAttack", true);
-            animnoy.SetBool("IsCalm", false);
+            animnoy.SetBool("IsAttacking", true);
+            
         }
 
         if (Vector3.Distance(player.position, transform.position) > attackDistance)
         {
             Debug.Log("Chara far");
-            animnoy.SetBool("IsAttack", false);
-            animnoy.SetBool("IsCalm", true);
+            animnoy.SetBool("IsAttacking", false);
+
         }
+
 
     }
 
@@ -46,7 +47,8 @@ public class NoyAnimTransition : MonoBehaviour
         if (other.gameObject.tag == "Book")
         {
             Debug.Log("YES degat");
-            animnoy.Play("Degat");
+            animnoy.SetBool("IsHurt", true);
+
 
             StartCoroutine(GetDamage());
         }
@@ -59,12 +61,11 @@ public class NoyAnimTransition : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1); //C#  }
 
-     
-
 
         if (health <= 0)
         {
-            animnoy.Play("Mort");
+            Debug.Log("Dead");
+            animnoy.SetBool("IsDead", true);
         }
     }
     

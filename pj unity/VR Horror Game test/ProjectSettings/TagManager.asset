@@ -16,6 +16,7 @@ TagManager:
   - Room2Key
   - Room3Key
   - SceneHandler
+  - FalseCard
   layers:
   - Default
   - TransparentFX
