@@ -23,22 +23,22 @@ public class SceneSwitch : MonoBehaviour
     {
         if (other.gameObject.tag == "RoomKey")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         if (other.gameObject.tag == "BureauKey")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         if (other.gameObject.tag == "Room2Key")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if (other.gameObject.tag == "Room3Key")
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 
 
