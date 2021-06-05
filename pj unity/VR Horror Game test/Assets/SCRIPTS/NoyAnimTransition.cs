@@ -8,7 +8,7 @@ public class NoyAnimTransition : MonoBehaviour
 
     public float attackDistance;
     public float CalmDistance;
-   
+    public GameObject livre; 
 
     private Animator animnoy;
 
@@ -49,18 +49,16 @@ public class NoyAnimTransition : MonoBehaviour
             Debug.Log("YES degat");
             animnoy.SetBool("IsHurt", true);
 
-
             StartCoroutine(GetDamage());
         }
     }
 
     IEnumerator GetDamage()
     {
-         health -= 1;
-        GetComponent<Renderer>().material.color = new Color(1, 0, 1, 1); //C#  }
-        yield return new WaitForSeconds(0.2f);
-        GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1); //C#  }
-
+        yield return new WaitForSeconds(0.7f);
+        animnoy.SetBool("IsHurt", false);
+        health -= 1;
+        
 
         if (health <= 0)
         {
