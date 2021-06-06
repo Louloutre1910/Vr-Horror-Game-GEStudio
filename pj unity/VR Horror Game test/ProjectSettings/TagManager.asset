@@ -17,6 +17,7 @@ TagManager:
   - Room3Key
   - SceneHandler
   - FalseCard
+  - NoyBook
   layers:
   - Default
   - TransparentFX
