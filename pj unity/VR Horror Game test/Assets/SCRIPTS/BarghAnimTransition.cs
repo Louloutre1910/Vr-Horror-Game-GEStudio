@@ -10,6 +10,9 @@ public class BarghAnimTransition : MonoBehaviour
 
     private Animator animbargh;
 
+    public GameObject Spacard;
+    public GameObject Falsecard1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +26,23 @@ public class BarghAnimTransition : MonoBehaviour
         if (other.gameObject.CompareTag("Spa"))
         {
             Debug.Log("Check");
+
             animbargh.SetBool("IsChecking", true);
+
             StartCoroutine(GetDawin());
+
+            Destroy(Spacard.gameObject);
         }
 
         if (other.gameObject.CompareTag("FalseCard"))
         {
             Debug.Log("Check");
+
             animbargh.SetBool("IsChecking", true);
+
             StartCoroutine(GetDamage());
+
+            Destroy(Falsecard1.gameObject);
         }
 
        
