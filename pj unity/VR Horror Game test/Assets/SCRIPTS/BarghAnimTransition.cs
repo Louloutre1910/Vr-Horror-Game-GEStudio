@@ -19,25 +19,47 @@ public class BarghAnimTransition : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Spa" )
+
+        if (other.gameObject.CompareTag("Spa"))
         {
-            Debug.Log("Win");
-            animbargh.SetBool("IsWinning", true);
+            Debug.Log("Check");
+            animbargh.SetBool("IsChecking", true);
+            StartCoroutine(GetDawin());
         }
-        else
+
+        if (other.gameObject.CompareTag("FalseCard"))
         {
-            if (other.gameObject.tag == "FalseCard")
-            {
-                Debug.Log("Death");
-                animbargh.SetBool("IsAttacking", true);
-                StartCoroutine(DeathScene());
-            }
+            Debug.Log("Check");
+            animbargh.SetBool("IsChecking", true);
+            StartCoroutine(GetDamage());
         }
-        IEnumerator DeathScene()
-        {
-            Instantiate(gameOver.gameObject);
-            yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Room2");
-        }
+
+       
     }
+
+    IEnumerator GetDawin()
+    {
+        yield return new WaitForSeconds(3f);
+        animbargh.SetBool("IsWinning", true);
+
+    }
+
+
+    IEnumerator GetDamage()
+    {
+        yield return new WaitForSeconds(3f);
+        animbargh.SetBool("IsAttacking", true);
+        StartCoroutine(DeathScene());
+
+    }
+
+    IEnumerator DeathScene()
+    {
+        Instantiate(gameOver.gameObject);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Room2");
+    }
+
+
+    
 }
