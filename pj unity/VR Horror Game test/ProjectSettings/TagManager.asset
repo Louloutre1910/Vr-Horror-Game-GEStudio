@@ -18,6 +18,7 @@ TagManager:
   - SceneHandler
   - FalseCard
   - NoyBook
+  - Coin
   layers:
   - Default
   - TransparentFX
