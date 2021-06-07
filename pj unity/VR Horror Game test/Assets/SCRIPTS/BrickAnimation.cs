@@ -38,12 +38,17 @@ public class BrickAnimation : MonoBehaviour
 
         if (isAttacking)
         {
-            if (Vector3.Distance(Coin1.transform.position, transform.position) < attackDistance)
+            if (Coin1 != null)
             {
-                animbrick.SetBool("IsAttacking", false);
-                animbrick.SetBool("IsCatching", true);
-                isAttacking = false;
+                if (Vector3.Distance(Coin1.transform.position, transform.position) < attackDistance)
+                {
+
+                    animbrick.SetBool("IsAttacking", false);
+                    animbrick.SetBool("IsCatching", true);
+                    isAttacking = false;
+                }
             }
+            
         }
 
     }
@@ -53,7 +58,7 @@ public class BrickAnimation : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Debug.Log("attrape");
-            Destroy(Coin1.gameObject);
+            //Destroy(Coin1.gameObject);
 
             animbrick.SetBool("IsHiding", true);
 
