@@ -6,17 +6,16 @@ public class TurnLightCave : MonoBehaviour
 {
 
     public GameObject light1;
-    private bool on = false;
+    
 
-  void OnTriggerStay(Collider plyr)
+
+    void OnTriggerEnter(Collider other)
     {
-        if (plyr.tag == "PlayerRightHand" && !on)
+        if (other.gameObject.tag == "PlayerRightHand")
         {
-            light1.SetActive(true);
-            on = true;
+            Debug.Log("light");
+            Instantiate(light1);
         }
-
-      
     }
 
 

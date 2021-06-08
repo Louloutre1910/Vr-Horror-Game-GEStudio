@@ -17,6 +17,8 @@ public class AiPathattack : MonoBehaviour
 
     public bool isPatrolling;
 
+    private int health = 2;
+
     private void Awake()
     {
         myAgent = GetComponent<NavMeshAgent>();
@@ -51,8 +53,8 @@ public class AiPathattack : MonoBehaviour
             isPatrolling = false;
             //myAgent.destination = player.transform.position;
             myAgent.ResetPath();
-            myAnimator.SetBool("isArmature", false);
-            myAnimator.SetBool("isAttacking", true);
+            
+            myAnimator.SetBool("IsAttacking", true);
         }
 
         if(distanceToPlayer > attackRange && !isPatrolling)
@@ -60,8 +62,8 @@ public class AiPathattack : MonoBehaviour
             isPatrolling = true;
             PickNextWP();
 
-            myAnimator.SetBool("isArmature", true);
-            myAnimator.SetBool("isAttacking", false);
+            
+            myAnimator.SetBool("IsAttacking", false);
         }
 
         
@@ -96,7 +98,6 @@ public class AiPathattack : MonoBehaviour
     }
 
 
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
@@ -105,4 +106,33 @@ public class AiPathattack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "FirstLight")
+        {
+            myAnimator.SetBool("IsHurt", true);
+
+            StartCoroutine(GetDamage());
+        }
+    }
+
+    IEnumerator GetDamage()
+    {
+        health -= 1;
+
+        Debug.Log("hurt");
+
+        yield return new WaitForSeconds(0.3f);
+        myAnimator.SetBool("IsHurt", false);
+
+        if (health <= 0)
+        {
+            Debug.Log("IsDead");
+            myAnimator.SetBool("IsDead", true);
+           
+        }
+    }
+
 }
