@@ -332,50 +332,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3fe0f004af23b478ad4054335d1da1, type: 3}
---- !u!1 &59019576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 59019578}
-  - component: {fileID: 59019577}
-  m_Layer: 0
-  m_Name: collider bureau
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &59019577
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59019576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7414744, y: 0.85157365, z: 0.025910378}
-  m_Center: {x: 0.20657218, y: -0.16019693, z: 0.44988918}
---- !u!4 &59019578
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59019576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29144412, y: 0.59014994, z: 2.7688446}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &59386399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10344,7 +10300,7 @@ Transform:
   - {fileID: 1098020964}
   - {fileID: 255564566}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098020960
 GameObject:
@@ -13106,8 +13062,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.44074714, y: 0.291903, z: 0.044461012}
-  m_Center: {x: -0.0013828874, y: 0.004615739, z: 0.13548887}
+  m_Size: {x: 0.4407471, y: 0.07341615, z: 0.4783594}
+  m_Center: {x: -0.0013828819, y: -0.10462768, z: -0.081460334}
 --- !u!114 &1709026683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13206,7 +13162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709026680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.713, y: 0.19536802, z: 0.07700014}
+  m_LocalPosition: {x: 0.713, y: 0.19536802, z: 0.308}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 143572564}
