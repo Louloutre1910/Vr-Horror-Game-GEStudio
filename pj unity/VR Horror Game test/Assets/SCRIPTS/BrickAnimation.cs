@@ -12,6 +12,7 @@ public class BrickAnimation : MonoBehaviour
     private Animator animbrick;
 
     public GameObject Coin1;
+    public GameObject Coin2;
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +59,9 @@ public class BrickAnimation : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Debug.Log("attrape");
-            //Destroy(Coin1.gameObject);
+            Destroy(Coin1.gameObject);
+            Destroy(Coin2.gameObject);
+
 
             animbrick.SetBool("IsHiding", true);
 

@@ -12,6 +12,8 @@ public class BarghAnimTransition : MonoBehaviour
 
     public GameObject Spacard;
     public GameObject Falsecard1;
+    public GameObject Falsecard2;
+    public GameObject Falsecard3;
 
     // Start is called before the first frame update
     void Start()
@@ -52,13 +54,17 @@ public class BarghAnimTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         animbargh.SetBool("IsWinning", true);
+        Destroy(Spacard.gameObject);
 
     }
 
 
     IEnumerator GetDamage()
     {
-        yield return new WaitForSeconds(3f);
+        Destroy(Falsecard1.gameObject);
+        Destroy(Falsecard2.gameObject);
+        Destroy(Falsecard3.gameObject);
+        yield return new WaitForSeconds(2.5f);
         animbargh.SetBool("IsAttacking", true);
         StartCoroutine(DeathScene());
 

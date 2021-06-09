@@ -13,9 +13,11 @@ public class SceneSwitch : MonoBehaviour
     {
        
         gameObject.tag = "RoomKey";
-        gameObject.tag = "BureauKey";
         gameObject.tag = "Room2Key";
         gameObject.tag = "Room3Key";
+        gameObject.tag = "Bureau2";
+        gameObject.tag = "Bureaufin";
+        gameObject.tag = "Cave";
 
     }
 
@@ -26,10 +28,6 @@ public class SceneSwitch : MonoBehaviour
             SceneManager.LoadScene(2);
         }
 
-        if (other.gameObject.tag == "BureauKey")
-        {
-            SceneManager.LoadScene(1);
-        }
 
         if (other.gameObject.tag == "Room2Key")
         {
@@ -41,6 +39,19 @@ public class SceneSwitch : MonoBehaviour
             SceneManager.LoadScene(4);
         }
 
+        if (other.gameObject.tag == "Bureau2")
+        {
+            SceneManager.LoadScene(5);
+        }
+        if (other.gameObject.tag == "Bureaufin")
+        {
+            SceneManager.LoadScene(6);
+        }
+
+        if (other.gameObject.tag == "Cave")
+        {
+            SceneManager.LoadScene(7);
+        }
 
 
     }
