@@ -616,6 +616,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3fe0f004af23b478ad4054335d1da1, type: 3}
+--- !u!1 &143327557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143327559}
+  - component: {fileID: 143327558}
+  m_Layer: 0
+  m_Name: collider tiroirs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &143327558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143327557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.542634, y: 0.13567507, z: 1.2834983}
+  m_Center: {x: 0.51033187, y: -0.012616456, z: 0.14174914}
+--- !u!4 &143327559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143327557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.60945785, y: 0.5353602, z: 3.019903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &143572564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 932dad261d6a2114887a12fa522ae4e1,
@@ -9272,7 +9316,6 @@ GameObject:
   - component: {fileID: 852414514}
   - component: {fileID: 852414513}
   - component: {fileID: 852414512}
-  - component: {fileID: 852414511}
   m_Layer: 0
   m_Name: Tiroirmilieu
   m_TagString: Untagged
@@ -9280,19 +9323,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &852414511
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852414510}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.584827, y: 0.13215727, z: 0.052056093}
-  m_Center: {x: -0.033769336, y: 0.031404406, z: 0.14126788}
 --- !u!153 &852414512
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -10410,7 +10440,6 @@ GameObject:
   - component: {fileID: 1098020963}
   - component: {fileID: 1098020962}
   - component: {fileID: 1098020961}
-  - component: {fileID: 1098020965}
   m_Layer: 0
   m_Name: Tiroirhautdroite
   m_TagString: Untagged
@@ -10619,19 +10648,6 @@ Transform:
   m_Father: {fileID: 1094457884}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1098020965
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098020960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.43937013, y: 0.2794754, z: 0.08336854}
-  m_Center: {x: -0.054820433, y: -0.08552477, z: 0.25502336}
 --- !u!1001 &1100437023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11081,7 +11097,6 @@ GameObject:
   - component: {fileID: 1241903984}
   - component: {fileID: 1241903983}
   - component: {fileID: 1241903982}
-  - component: {fileID: 1241903981}
   m_Layer: 8
   m_Name: Tiroirbasgauche
   m_TagString: Untagged
@@ -11105,19 +11120,6 @@ Transform:
   m_Father: {fileID: 1094457884}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1241903981
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241903979}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44792557, y: 0.29073423, z: 0.0443058}
-  m_Center: {x: 0.017716408, y: 0.0006737411, z: 0.14573836}
 --- !u!153 &1241903982
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -11633,7 +11635,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8ff910279996db0488450d89d9dd228f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.06
+      value: -2.115
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ff910279996db0488450d89d9dd228f,
         type: 3}
@@ -13216,7 +13218,6 @@ GameObject:
   - component: {fileID: 1709026685}
   - component: {fileID: 1709026684}
   - component: {fileID: 1709026683}
-  - component: {fileID: 1709026682}
   - component: {fileID: 1709026681}
   m_Layer: 0
   m_Name: Tiroirhautgauche
@@ -13237,7 +13238,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 60}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.1173, y: 0.65890485, z: 3.3758}
+  m_ConnectedAnchor: {x: 1.1173, y: 0.65890485, z: 3.1085}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -13280,7 +13281,7 @@ ConfigurableJoint:
   m_XDrive:
     serializedVersion: 3
     positionSpring: 0
-    positionDamper: 2
+    positionDamper: 3
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
@@ -13321,19 +13322,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!65 &1709026682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709026680}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4407471, y: 0.07341615, z: 0.4783594}
-  m_Center: {x: -0.0013828819, y: -0.10462768, z: -0.081460334}
 --- !u!114 &1709026683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13432,7 +13420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709026680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.713, y: 0.19536802, z: 0.308}
+  m_LocalPosition: {x: 0.713, y: 0.19536802, z: 0.065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 143572564}
