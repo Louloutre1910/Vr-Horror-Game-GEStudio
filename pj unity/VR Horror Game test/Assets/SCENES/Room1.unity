@@ -8505,6 +8505,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -982065328737844710, guid: 685809fb527674246aade42f1f362f6c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ff84020ebf0b8f43993dc3109d311a7, type: 2}
     - target: {fileID: 919132149155446097, guid: 685809fb527674246aade42f1f362f6c,
         type: 3}
       propertyPath: m_Name
@@ -26883,6 +26888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toilet_Low_UV
       objectReference: {fileID: 0}
+    - target: {fileID: 9140047342032855549, guid: bacf216a503eb8748a9594286721c580,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e30a869f6edc4e4bb759fde7e877bbb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bacf216a503eb8748a9594286721c580, type: 3}
 --- !u!4 &1792550946 stripped
@@ -27058,6 +27068,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1564696536460577189, guid: 45ae01564c06ad6459e50562e5de658a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f224fe283ffd772498a5f3da84400d04, type: 2}
     - target: {fileID: -400769230427872090, guid: 45ae01564c06ad6459e50562e5de658a,
         type: 3}
       propertyPath: m_LocalPosition.x
