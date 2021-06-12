@@ -8,11 +8,15 @@ public class NoyAnimTransition : MonoBehaviour
 
     public float attackDistance;
     public float CalmDistance;
-    public GameObject livre; 
+    public GameObject livre;
+    public GameObject noy;
+    public GameObject deathparticles;
 
     private Animator animnoy;
 
     private int health = 5;
+
+  
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +68,11 @@ public class NoyAnimTransition : MonoBehaviour
         {
             Debug.Log("Dead");
             animnoy.SetBool("IsDead", true);
+
+            Instantiate(deathparticles);
+
+            Destroy(noy, 3f);
+            
         }
     }
     
