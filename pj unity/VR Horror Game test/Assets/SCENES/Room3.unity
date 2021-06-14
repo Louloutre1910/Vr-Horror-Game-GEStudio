@@ -5656,11 +5656,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -912537285980270394, guid: 7667e21c26076ba4f96c1780e3de9c1e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e94f13496314354fa15693796c297f9, type: 2}
     - target: {fileID: 919132149155446097, guid: 7667e21c26076ba4f96c1780e3de9c1e,
         type: 3}
       propertyPath: m_Name
       value: Brick-Calme-Blend
       objectReference: {fileID: 0}
+    - target: {fileID: 1850993354937876875, guid: 7667e21c26076ba4f96c1780e3de9c1e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b4a61289532fb740b495d8bdedf6dc9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7667e21c26076ba4f96c1780e3de9c1e, type: 3}
 --- !u!1 &130017954 stripped
@@ -12267,6 +12277,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick-Calme-baign
       objectReference: {fileID: 0}
+    - target: {fileID: 1382070239096803253, guid: 7d4d8aa9e494982409f15e0944e08ae6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6d2b0c5bcdbd284e930682f9dbfc777, type: 2}
+    - target: {fileID: 1850993354937876875, guid: 7d4d8aa9e494982409f15e0944e08ae6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b4a61289532fb740b495d8bdedf6dc9, type: 2}
     - target: {fileID: 4768712005675041303, guid: 7d4d8aa9e494982409f15e0944e08ae6,
         type: 3}
       propertyPath: m_LocalPosition.y
