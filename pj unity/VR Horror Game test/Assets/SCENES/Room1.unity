@@ -8679,6 +8679,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1825731260}
     m_Modifications:
+    - target: {fileID: -8723236140248029573, guid: e22b8ff2b5c40b743a7e9c457f344f57,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a70bf00a0c2b24f870e029e5420509, type: 2}
     - target: {fileID: -8679921383154817045, guid: e22b8ff2b5c40b743a7e9c457f344f57,
         type: 3}
       propertyPath: m_RootOrder
@@ -14339,6 +14344,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NoyBook
       objectReference: {fileID: 0}
+    - target: {fileID: 8405373895205816873, guid: 437c2c54292e03346a708ab6acbd06da,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 603698fa034a8bc45b08d1d27cb892bf, type: 2}
+    - target: {fileID: 8750518447021195093, guid: 437c2c54292e03346a708ab6acbd06da,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cef4588d79ce23f47bed11ad83702053, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 437c2c54292e03346a708ab6acbd06da, type: 3}
 --- !u!1 &588329361 stripped
@@ -47571,7 +47586,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.990566, g: 0.81045634, b: 0.5747152, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 2.12
   m_Range: 8.8075485
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
