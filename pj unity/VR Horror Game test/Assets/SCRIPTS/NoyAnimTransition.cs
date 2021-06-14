@@ -32,7 +32,9 @@ public class NoyAnimTransition : MonoBehaviour
         {
             Debug.Log("Chara closed");
             animnoy.SetBool("IsAttacking", true);
-            
+
+          
+
         }
 
         if (Vector3.Distance(player.position, transform.position) > attackDistance)
@@ -71,8 +73,7 @@ public class NoyAnimTransition : MonoBehaviour
 
             Instantiate(deathparticles);
 
-            Destroy(noy, 3f);
-            
+           
         }
     }
     
