@@ -70,6 +70,8 @@ public class NoyAnimTransition : MonoBehaviour
             Debug.Log("Dead");
             animnoy.SetBool("IsDead", true);
             yield return new WaitForSeconds(1f);
+
+            Instantiate(deathparticles.gameObject);
             
            
         }

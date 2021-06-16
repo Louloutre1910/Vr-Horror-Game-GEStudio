@@ -14897,7 +14897,7 @@ MonoBehaviour:
   attackDistance: 2
   CalmDistance: 0
   livre: {fileID: 588329366}
-  deathparticles: {fileID: 627778640733191939, guid: 9c3cf03a952fa894bb123dd4f510ad2b,
+  deathparticles: {fileID: 7942689498756928762, guid: a7f0e0c1b77022243a4180c9fcaad6b6,
     type: 3}
 --- !u!95 &588329365
 Animator:
