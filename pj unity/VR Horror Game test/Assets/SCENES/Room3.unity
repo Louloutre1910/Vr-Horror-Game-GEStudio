@@ -5694,7 +5694,7 @@ MonoBehaviour:
   player: {fileID: 1436392948}
   attackDistance: 2
   CalmDistance: 0
-  Coin1: {fileID: 1966426258}
+  Coin1: {fileID: 1997495072}
   Coin2: {fileID: 1609560976}
 --- !u!95 &130017956
 Animator:
