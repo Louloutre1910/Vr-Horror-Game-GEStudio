@@ -70,7 +70,7 @@ public class NoyAnimTransition : MonoBehaviour
         {
             Debug.Log("Dead");
             animnoy.SetBool("IsDead", true);
-            Menu.BossKilled();
+            Menu.NoyKilled();
             Instantiate(deathparticles);
 
            

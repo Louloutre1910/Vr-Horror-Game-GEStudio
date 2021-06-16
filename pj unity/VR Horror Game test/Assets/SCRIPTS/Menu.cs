@@ -6,19 +6,34 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public static int key = 0;
+    public static bool Brick = false;
+    public static bool Bargh = false;
+    public static bool Noy = false;
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
     }
-    public static void BossKilled()
+    public static void BrickKilled()
     {
-        key += 1;
-        Debug.Log(key);
+        Brick = true;
+        Debug.Log("Brick killed : "+ Brick);
+    }
+    public static void BarghKilled()
+    {
+        Bargh = true;
+        Debug.Log("Bargh killed : " + Bargh);
+
+    }
+    public static void NoyKilled()
+    {
+        Noy = true;
+        Debug.Log("Noy killed : " + Noy);
     }
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public int getKey() { return key; }
+    public static bool getBrick() { return Brick; }
+    public static bool getBargh() { return Bargh; }
+    public static bool getNoy() { return Noy; }
 }

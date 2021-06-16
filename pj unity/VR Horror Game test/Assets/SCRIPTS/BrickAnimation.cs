@@ -71,9 +71,8 @@ public class BrickAnimation : MonoBehaviour
 
     IEnumerator GetDawin()
     {
-
+        Menu.BrickKilled();
         Debug.Log("win");
-        Menu.BossKilled();
         yield return new WaitForSeconds(0.1f);
         animbrick.SetBool("IsAttacking", true);
         
