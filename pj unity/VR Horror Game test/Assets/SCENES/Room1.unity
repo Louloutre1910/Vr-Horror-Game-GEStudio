@@ -675,10 +675,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 130.524
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -8721,8 +8731,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2952862, z: 0.6415485}
+  m_Center: {x: 5.417977e-10, y: 0.052713394, z: -0.024195222}
 --- !u!114 &174661393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9433,10 +9443,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 112.165
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -9527,10 +9547,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 112.165
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -14867,7 +14897,6 @@ MonoBehaviour:
   attackDistance: 2
   CalmDistance: 0
   livre: {fileID: 588329366}
-  noy: {fileID: 588329361}
   deathparticles: {fileID: 627778640733191939, guid: 9c3cf03a952fa894bb123dd4f510ad2b,
     type: 3}
 --- !u!95 &588329365
@@ -14998,10 +15027,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 71.371
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -26522,10 +26561,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 71.371
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -27339,10 +27388,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 158.602
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -36464,10 +36523,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 130.524
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
@@ -51277,10 +51346,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 112.165
       objectReference: {fileID: 0}
+    - target: {fileID: -8119400442103979874, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}
       propertyPath: m_Name
       value: Livre_LOW_UV (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c6e4c4d2c601d48ba9c554934ca2e8,
         type: 3}

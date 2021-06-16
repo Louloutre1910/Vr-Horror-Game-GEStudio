@@ -21,6 +21,8 @@ TagManager:
   - Bureau2
   - Bureaufin
   - Cave
+  - Coin1
+  - Coin2
   layers:
   - Default
   - TransparentFX

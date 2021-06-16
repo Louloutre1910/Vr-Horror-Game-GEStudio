@@ -17,7 +17,7 @@ public class AiPathattack : MonoBehaviour
 
     public bool isPatrolling;
 
-    private int health = 2;
+    private int health = 6;
 
     private void Awake()
     {

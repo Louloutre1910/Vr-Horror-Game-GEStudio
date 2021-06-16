@@ -8,8 +8,7 @@ public class clecave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if(Menu.getBrick() && Menu.getBargh() && Menu.getNoy())
-        if (Menu.getBargh())
+        if(Menu.getBrick() && Menu.getBargh() && Menu.getNoy())
             {
             Debug.Log("l'instantiate pue la mort");
             Instantiate(clécave.gameObject);

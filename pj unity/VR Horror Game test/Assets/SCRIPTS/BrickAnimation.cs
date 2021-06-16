@@ -34,33 +34,54 @@ public class BrickAnimation : MonoBehaviour
         {
             Debug.Log("Chara far");
             animbrick.SetBool("IsAttacking", false);
+            animbrick.SetBool("IsCatching", false);
             isAttacking = false;
         }
 
         if (isAttacking)
         {
-            if (Coin1 != null)
-            {
-                if (Vector3.Distance(Coin1.transform.position, transform.position) < attackDistance)
+            if (Vector3.Distance(Coin1.transform.position, transform.position) < attackDistance)
                 {
 
                     animbrick.SetBool("IsAttacking", false);
                     animbrick.SetBool("IsCatching", true);
                     isAttacking = false;
+
                 }
-            }
             
+            if (Vector3.Distance(Coin2.transform.position, transform.position) < attackDistance)
+                {
+
+                    animbrick.SetBool("IsAttacking", false);
+                    animbrick.SetBool("IsCatching", true);
+                    isAttacking = false;
+
+                }
+
+            
+
+
         }
 
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Coin")
+        if (other.gameObject.tag == "Coin1")
         {
             Debug.Log("attrape");
-           
 
+            Coin1.SetActive(false);
+
+            animbrick.SetBool("IsHiding", true);
+
+            StartCoroutine(GetDawin());
+        }
+        if (other.gameObject.tag == "Coin2")
+        {
+            Debug.Log("attrape");
+
+            Coin2.SetActive(false);
 
             animbrick.SetBool("IsHiding", true);
 
@@ -73,7 +94,7 @@ public class BrickAnimation : MonoBehaviour
         Menu.BrickKilled();
         Debug.Log("win");
         yield return new WaitForSeconds(0.1f);
-        animbrick.SetBool("IsAttacking", true);
+       
         
 
     }

@@ -15,6 +15,8 @@ public class BarghAnimTransition : MonoBehaviour
     public GameObject Falsecard2;
     public GameObject Falsecard3;
 
+    public GameObject death;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class BarghAnimTransition : MonoBehaviour
 
         if (other.gameObject.CompareTag("Spa"))
         {
+            Spacard.SetActive(false);
+
             Debug.Log("Check");
 
             animbargh.SetBool("IsChecking", true);
@@ -44,7 +48,11 @@ public class BarghAnimTransition : MonoBehaviour
 
             StartCoroutine(GetDamage());
 
-            
+            Falsecard1.SetActive(false);
+            Falsecard2.SetActive(false);
+            Falsecard3.SetActive(false);
+
+
         }
 
        
@@ -52,18 +60,20 @@ public class BarghAnimTransition : MonoBehaviour
 
     IEnumerator GetDawin()
     {
-        Menu.BarghKilled();
-        yield return new WaitForSeconds(3f);
-        animbargh.SetBool("IsWinning", true);
         
-
+        Menu.BarghKilled();
+        yield return new WaitForSeconds(2f);
+        animbargh.SetBool("IsWinning", true);
+        Instantiate(death.gameObject);
+        
+        
     }
 
 
     IEnumerator GetDamage()
     {
         
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
         animbargh.SetBool("IsAttacking", true);
         StartCoroutine(DeathScene());
 

@@ -9,12 +9,12 @@ public class NoyAnimTransition : MonoBehaviour
     public float attackDistance;
     public float CalmDistance;
     public GameObject livre;
-    public GameObject noy;
+    
     public GameObject deathparticles;
 
     private Animator animnoy;
 
-    private int health = 1;
+    private int health = 3;
 
   
 
@@ -52,28 +52,33 @@ public class NoyAnimTransition : MonoBehaviour
     {
         if (other.gameObject.tag == "Book")
         {
-            Debug.Log("YES degat");
-            animnoy.SetBool("IsHurt", true);
-
+            
             StartCoroutine(GetDamage());
         }
     }
 
     IEnumerator GetDamage()
     {
-        yield return new WaitForSeconds(0.7f);
-        animnoy.SetBool("IsHurt", false);
+        
+
         health -= 1;
         
 
         if (health <= 0)
         {
+            Menu.NoyKilled();
             Debug.Log("Dead");
             animnoy.SetBool("IsDead", true);
-            Menu.NoyKilled();
-            Instantiate(deathparticles);
-
+            yield return new WaitForSeconds(1f);
+            
            
+        }
+        else
+        {
+            Debug.Log("YES degat");
+            animnoy.SetBool("IsHurt", true);
+            yield return new WaitForSeconds(1f);
+            animnoy.SetBool("IsHurt", false);
         }
     }
     
