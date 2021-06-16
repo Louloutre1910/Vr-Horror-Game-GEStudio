@@ -72,6 +72,7 @@ public class BarghAnimTransition : MonoBehaviour
 
     IEnumerator DeathScene()
     {
+        Menu.BossKilled();
         Instantiate(gameOver.gameObject);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Room2");

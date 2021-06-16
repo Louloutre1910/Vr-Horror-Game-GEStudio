@@ -73,6 +73,7 @@ public class BrickAnimation : MonoBehaviour
     {
 
         Debug.Log("win");
+        Menu.BossKilled();
         yield return new WaitForSeconds(0.1f);
         animbrick.SetBool("IsAttacking", true);
         
