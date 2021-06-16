@@ -59,8 +59,7 @@ public class BrickAnimation : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Debug.Log("attrape");
-            Destroy(Coin1.gameObject);
-            Destroy(Coin2.gameObject);
+           
 
 
             animbrick.SetBool("IsHiding", true);

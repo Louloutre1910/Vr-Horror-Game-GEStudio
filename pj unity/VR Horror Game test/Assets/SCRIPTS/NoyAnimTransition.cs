@@ -14,7 +14,7 @@ public class NoyAnimTransition : MonoBehaviour
 
     private Animator animnoy;
 
-    private int health = 5;
+    private int health = 1;
 
   
 

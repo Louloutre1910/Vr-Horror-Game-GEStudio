@@ -33,7 +33,7 @@ public class BarghAnimTransition : MonoBehaviour
 
             StartCoroutine(GetDawin());
 
-            Destroy(Spacard.gameObject);
+            
         }
 
         if (other.gameObject.CompareTag("FalseCard"))
@@ -44,7 +44,7 @@ public class BarghAnimTransition : MonoBehaviour
 
             StartCoroutine(GetDamage());
 
-            Destroy(Falsecard1.gameObject);
+            
         }
 
        
@@ -52,18 +52,17 @@ public class BarghAnimTransition : MonoBehaviour
 
     IEnumerator GetDawin()
     {
+        Menu.BarghKilled();
         yield return new WaitForSeconds(3f);
         animbargh.SetBool("IsWinning", true);
-        Destroy(Spacard.gameObject);
+        
 
     }
 
 
     IEnumerator GetDamage()
     {
-        Destroy(Falsecard1.gameObject);
-        Destroy(Falsecard2.gameObject);
-        Destroy(Falsecard3.gameObject);
+        
         yield return new WaitForSeconds(2.5f);
         animbargh.SetBool("IsAttacking", true);
         StartCoroutine(DeathScene());
@@ -72,7 +71,7 @@ public class BarghAnimTransition : MonoBehaviour
 
     IEnumerator DeathScene()
     {
-        Menu.BarghKilled();
+        
         Instantiate(gameOver.gameObject);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Room2");
