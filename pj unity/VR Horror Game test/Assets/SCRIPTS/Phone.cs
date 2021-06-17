@@ -17,7 +17,7 @@ public class Phone : MonoBehaviour
        audio2 = GetComponent<AudioSource>();
         
        
-        Invoke("playRing", 5.0f);
+        Invoke("playRing", 8.0f);
 
         
 

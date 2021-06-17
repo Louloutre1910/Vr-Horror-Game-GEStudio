@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public AudioSource barriere;
+
     public static bool Brick = false;
     public static bool Bargh = false;
     public static bool Noy = false;
@@ -32,6 +34,7 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        barriere.Play();
     }
     public static bool getBrick() { return Brick; }
     public static bool getBargh() { return Bargh; }
