@@ -13,6 +13,8 @@ public class Playerdeath : MonoBehaviour
 
     private int health = 3;
 
+    public AudioSource ouch;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,9 @@ public class Playerdeath : MonoBehaviour
             health -= 1;
             Lefthand.GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1);
             Righthand.GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1);
+            ouch.Play();
+
+
 
 
         if (health <= 0)

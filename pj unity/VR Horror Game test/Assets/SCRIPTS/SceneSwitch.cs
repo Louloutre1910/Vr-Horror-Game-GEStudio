@@ -17,7 +17,7 @@ public class SceneSwitch : MonoBehaviour
         gameObject.tag = "Room3Key";
         gameObject.tag = "Bureau2";
         gameObject.tag = "Bureaufin";
-        gameObject.tag = "Cave";
+        
 
     }
 
@@ -48,10 +48,7 @@ public class SceneSwitch : MonoBehaviour
             SceneManager.LoadScene(6);
         }
 
-        if (other.gameObject.tag == "Cave")
-        {
-            SceneManager.LoadScene(7);
-        }
+       
 
 
     }
