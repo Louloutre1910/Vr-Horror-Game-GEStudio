@@ -7707,7 +7707,7 @@ GameObject:
   - component: {fileID: 627893359}
   - component: {fileID: 627893358}
   - component: {fileID: 627893357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12492,7 +12492,7 @@ GameObject:
   - component: {fileID: 1027226433}
   - component: {fileID: 1027226432}
   - component: {fileID: 1027226431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13291,6 +13291,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RecipientOccult_LOW
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45ac47e0ceeed04a8cf07e140069406, type: 3}
@@ -14110,7 +14120,7 @@ GameObject:
   - component: {fileID: 1125717981}
   - component: {fileID: 1125717980}
   - component: {fileID: 1125717979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16571,7 +16581,7 @@ GameObject:
   - component: {fileID: 1293873334}
   - component: {fileID: 1293873333}
   - component: {fileID: 1293873332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19689,7 +19699,7 @@ GameObject:
   - component: {fileID: 1535937522}
   - component: {fileID: 1535937521}
   - component: {fileID: 1535937520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21303,7 +21313,7 @@ MonoBehaviour:
   m_SelectUsage: 3
   m_ActivateUsage: 2
   m_UIPressUsage: 2
-  m_AxisToPressThreshold: 0.1
+  m_AxisToPressThreshold: 0
   m_ModelPrefab: {fileID: 7269871822192327750, guid: 7e5f9cf91a849af468f559c5496e502c,
     type: 3}
   m_ModelTransform: {fileID: 0}
@@ -21562,7 +21572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ring: {fileID: 8300000, guid: 066cbdb3f8bbb254b82fac09a5f154fc, type: 3}
-  call: {fileID: 8300000, guid: 93d0110026394194db36e6c6883c56a1, type: 3}
+  call: {fileID: 8300000, guid: bf6af038c6e162f4e9ab901dfe982819, type: 3}
 --- !u!65 &1702264807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21722,7 +21732,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 658aea50c900b4a4a9c7ed0fc5650cb0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22866,7 +22876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789732130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.05, z: 0.62}
+  m_LocalPosition: {x: 0.852, y: 0.07, z: 0.62}
   m_LocalScale: {x: 0.8340855, y: 1.6575, z: 1.0577257}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23251,7 +23261,7 @@ GameObject:
   - component: {fileID: 1846017163}
   - component: {fileID: 1846017162}
   - component: {fileID: 1846017161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23513,6 +23523,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DAGUECorr_Low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df83470bc27bdc40b60c564ae38e4a0, type: 3}
@@ -24054,6 +24074,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AlmanachOccult_LOW
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0cffa7978a2a2448ab5e7ac4766069, type: 3}
@@ -30038,7 +30068,7 @@ GameObject:
   - component: {fileID: 2064883279}
   - component: {fileID: 2064883278}
   - component: {fileID: 2064883277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30418,7 +30448,7 @@ GameObject:
   - component: {fileID: 2093896516}
   - component: {fileID: 2093896515}
   - component: {fileID: 2093896514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

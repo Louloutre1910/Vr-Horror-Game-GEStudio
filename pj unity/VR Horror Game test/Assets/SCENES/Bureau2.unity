@@ -2841,7 +2841,7 @@ GameObject:
   - component: {fileID: 242728225}
   - component: {fileID: 242728224}
   - component: {fileID: 242728223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4403,7 +4403,7 @@ MonoBehaviour:
   m_SelectUsage: 3
   m_ActivateUsage: 2
   m_UIPressUsage: 2
-  m_AxisToPressThreshold: 0.1
+  m_AxisToPressThreshold: 0
   m_ModelPrefab: {fileID: 7269871822192327750, guid: 7e5f9cf91a849af468f559c5496e502c,
     type: 3}
   m_ModelTransform: {fileID: 0}
@@ -6976,7 +6976,7 @@ GameObject:
   - component: {fileID: 562674171}
   - component: {fileID: 562674170}
   - component: {fileID: 562674169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8071,7 +8071,7 @@ GameObject:
   - component: {fileID: 715526563}
   - component: {fileID: 715526562}
   - component: {fileID: 715526561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8734,7 +8734,7 @@ GameObject:
   - component: {fileID: 733822617}
   - component: {fileID: 733822616}
   - component: {fileID: 733822615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10127,7 +10127,7 @@ GameObject:
   - component: {fileID: 895845783}
   - component: {fileID: 895845782}
   - component: {fileID: 895845781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12601,7 +12601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120982360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.05, z: 0.62}
+  m_LocalPosition: {x: 0.852, y: 0.07, z: 0.62}
   m_LocalScale: {x: 0.8340855, y: 1.6575, z: 1.0577257}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19765,7 +19765,7 @@ GameObject:
   - component: {fileID: 1292948245}
   - component: {fileID: 1292948244}
   - component: {fileID: 1292948243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20363,7 +20363,7 @@ GameObject:
   - component: {fileID: 1344335296}
   - component: {fileID: 1344335295}
   - component: {fileID: 1344335294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23189,7 +23189,7 @@ GameObject:
   - component: {fileID: 1592149817}
   - component: {fileID: 1592149816}
   - component: {fileID: 1592149815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24632,6 +24632,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AlmanachOccult_LOW
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0cffa7978a2a2448ab5e7ac4766069, type: 3}
@@ -27600,6 +27610,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DAGUECorr_Low
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df83470bc27bdc40b60c564ae38e4a0, type: 3}
 --- !u!4 &1927883876 stripped
@@ -29819,6 +29839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RecipientOccult_LOW
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45ac47e0ceeed04a8cf07e140069406, type: 3}

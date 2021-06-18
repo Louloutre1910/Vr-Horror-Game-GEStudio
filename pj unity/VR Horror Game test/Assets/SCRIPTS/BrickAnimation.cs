@@ -14,10 +14,21 @@ public class BrickAnimation : MonoBehaviour
     public GameObject Coin1;
     public GameObject Coin2;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         animbrick = GetComponent<Animator>();
+        
+
+        if (Menu.getBrick())
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void Update()
@@ -28,6 +39,8 @@ public class BrickAnimation : MonoBehaviour
             Debug.Log("Chara closed");
             animbrick.SetBool("IsAttacking", true);
             isAttacking = true;
+
+            
         }
 
         if (Vector3.Distance(player.position, transform.position) > attackDistance)

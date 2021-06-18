@@ -17,7 +17,20 @@ public class AiPathattack : MonoBehaviour
 
     public bool isPatrolling;
 
-    private int health = 6;
+    private int health = 7;
+
+    public AudioSource slurp;
+    public AudioSource attaque;
+    public AudioSource hurt;
+    public AudioSource dead;
+    public AudioSource heart;
+    public AudioSource musique1;
+    public AudioSource musique2;
+
+
+
+    public GameObject clefin;
+    public GameObject victory;
 
     private void Awake()
     {
@@ -32,6 +45,10 @@ public class AiPathattack : MonoBehaviour
         PickNextWP();
         /*myAgent.updatePosition = false;*/
         isPatrolling = true;
+
+        slurp.Play();
+        heart.Play();
+        musique1.Play();
     }
 
     // Update is called once per frame
@@ -39,7 +56,7 @@ public class AiPathattack : MonoBehaviour
     {
         if (isPatrolling)
         {
-            if (!myAgent.pathPending && myAgent.remainingDistance < .5f)
+            if (!myAgent.pathPending && myAgent.remainingDistance < .10f)
             {
                 PickNextWP();
             }
@@ -55,6 +72,8 @@ public class AiPathattack : MonoBehaviour
             myAgent.ResetPath();
             
             myAnimator.SetBool("IsAttacking", true);
+
+            
         }
 
         if(distanceToPlayer > attackRange && !isPatrolling)
@@ -64,6 +83,8 @@ public class AiPathattack : MonoBehaviour
 
             
             myAnimator.SetBool("IsAttacking", false);
+
+            
         }
 
         
@@ -76,15 +97,7 @@ public class AiPathattack : MonoBehaviour
         }
     }
 
-
-    /*private void OnAnimatorMove()
-    {
-        //Update pos based on animation mvmt on surface height plane
-        Vector3 position = myAnimator.rootPosition;
-        position.y = myAgent.nextPosition.y;
-        transform.position = position;
-    }*/
-
+    
 
     void PickNextWP()
     {
@@ -95,6 +108,8 @@ public class AiPathattack : MonoBehaviour
         {
             nextWP = 0;
         }
+
+       
     }
 
 
@@ -114,6 +129,8 @@ public class AiPathattack : MonoBehaviour
         {
             myAnimator.SetBool("IsHurt", true);
 
+            hurt.Play();
+
             StartCoroutine(GetDamage());
         }
     }
@@ -127,11 +144,27 @@ public class AiPathattack : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         myAnimator.SetBool("IsHurt", false);
 
-        if (health <= 0)
+        if (health == 0)
         {
+
+           
+
             Debug.Log("IsDead");
             myAnimator.SetBool("IsDead", true);
-           
+
+            dead.Play();
+            slurp.Stop();
+            heart.Stop();
+            musique1.Stop();
+            musique2.Play();
+
+            Destroy(this.gameObject, 7f);
+
+            Instantiate(clefin.gameObject);
+            Instantiate(victory.gameObject);
+
+
+
         }
     }
 

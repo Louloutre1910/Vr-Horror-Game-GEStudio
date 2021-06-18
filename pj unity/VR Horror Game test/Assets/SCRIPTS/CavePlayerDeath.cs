@@ -9,12 +9,14 @@ public class CavePlayerDeath : MonoBehaviour
 
     public GameObject gameOver;
 
-    private int health = 5;
+    private int health = 2;
+
+    public AudioSource ouch;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,6 +27,8 @@ public class CavePlayerDeath : MonoBehaviour
 
 
             StartCoroutine(GetDamage());
+
+            ouch.Play();
 
         }
 
@@ -40,6 +44,8 @@ public class CavePlayerDeath : MonoBehaviour
 
         if (health <= 0)
         {
+
+            
 
             Debug.Log("Player Dead");
             Instantiate(gameOver.gameObject);

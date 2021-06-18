@@ -40,8 +40,7 @@ public class Playerdeath : MonoBehaviour
             Debug.Log("Player Hurt");
 
             health -= 1;
-            Lefthand.GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1);
-            Righthand.GetComponent<Renderer>().material.color = new Color(1, 1, 0, 1);
+           
             ouch.Play();
 
 
@@ -52,7 +51,7 @@ public class Playerdeath : MonoBehaviour
 
             Debug.Log("Player Dead");
             Instantiate(gameOver.gameObject);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3);
             SceneManager.LoadScene("Room1");
         }
 

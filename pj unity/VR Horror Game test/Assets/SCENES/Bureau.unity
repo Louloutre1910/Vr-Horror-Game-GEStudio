@@ -639,6 +639,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DAGUECorr_Low
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8df83470bc27bdc40b60c564ae38e4a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df83470bc27bdc40b60c564ae38e4a0, type: 3}
 --- !u!4 &59386400 stripped
@@ -7971,8 +7981,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301655185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.05, z: 0.62}
-  m_LocalScale: {x: 0.8340855, y: 1.6575, z: 1.0577257}
+  m_LocalPosition: {x: 0.852, y: 0.067, z: 0.62}
+  m_LocalScale: {x: 0.76590735, y: 1.6575, z: 1.0577257}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -10623,7 +10633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ring: {fileID: 8300000, guid: 066cbdb3f8bbb254b82fac09a5f154fc, type: 3}
-  call: {fileID: 8300000, guid: 93d0110026394194db36e6c6883c56a1, type: 3}
+  call: {fileID: 8300000, guid: 123632a233fc0db4c9f3157a82f3bbcf, type: 3}
 --- !u!82 &547590628
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15195,7 +15205,7 @@ GameObject:
   - component: {fileID: 854110484}
   - component: {fileID: 854110483}
   - component: {fileID: 854110482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15509,6 +15519,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RecipientOccult_LOW
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c45ac47e0ceeed04a8cf07e140069406,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45ac47e0ceeed04a8cf07e140069406, type: 3}
 --- !u!4 &865459674 stripped
@@ -15517,6 +15537,115 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 865459673}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &865459675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c45ac47e0ceeed04a8cf07e140069406,
+    type: 3}
+  m_PrefabInstance: {fileID: 865459673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &865459676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865459675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9837006, y: 2.4604924, z: 1.7674469}
+  m_Center: {x: -0.055812098, y: 0.88822335, z: -0.058161844}
+--- !u!114 &865459677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865459675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1423783034}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OnFirstHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CustomReticle: {fileID: 0}
+  m_AttachTransform: {fileID: 0}
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 0.25
+  m_GravityOnDetach: 0
+  m_RetainTransformParent: 1
+--- !u!54 &865459678
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865459675}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &875404784
 GameObject:
   m_ObjectHideFlags: 0
@@ -15529,7 +15658,7 @@ GameObject:
   - component: {fileID: 875404788}
   - component: {fileID: 875404787}
   - component: {fileID: 875404786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15624,7 +15753,7 @@ GameObject:
   - component: {fileID: 875750422}
   - component: {fileID: 875750421}
   - component: {fileID: 875750420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18823,7 +18952,7 @@ GameObject:
   - component: {fileID: 1113116847}
   - component: {fileID: 1113116846}
   - component: {fileID: 1113116845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20239,7 +20368,7 @@ GameObject:
   - component: {fileID: 1280936675}
   - component: {fileID: 1280936674}
   - component: {fileID: 1280936673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23314,6 +23443,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlmanachOccult_LOW
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: da0cffa7978a2a2448ab5e7ac4766069,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0cffa7978a2a2448ab5e7ac4766069, type: 3}
 --- !u!4 &1594214646 stripped
@@ -24843,7 +24982,7 @@ MonoBehaviour:
   m_SelectUsage: 3
   m_ActivateUsage: 2
   m_UIPressUsage: 2
-  m_AxisToPressThreshold: 0.1
+  m_AxisToPressThreshold: 0
   m_ModelPrefab: {fileID: 7269871822192327750, guid: 7e5f9cf91a849af468f559c5496e502c,
     type: 3}
   m_ModelTransform: {fileID: 0}
@@ -26005,7 +26144,7 @@ GameObject:
   - component: {fileID: 1797345379}
   - component: {fileID: 1797345378}
   - component: {fileID: 1797345377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26721,7 +26860,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 658aea50c900b4a4a9c7ed0fc5650cb0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -29328,7 +29467,7 @@ GameObject:
   - component: {fileID: 2043990333}
   - component: {fileID: 2043990332}
   - component: {fileID: 2043990331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29802,7 +29941,7 @@ GameObject:
   - component: {fileID: 2084951364}
   - component: {fileID: 2084951363}
   - component: {fileID: 2084951362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: INDICES-esprits-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

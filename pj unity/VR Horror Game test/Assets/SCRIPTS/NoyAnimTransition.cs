@@ -8,6 +8,7 @@ public class NoyAnimTransition : MonoBehaviour
 
     public float attackDistance;
     public float CalmDistance;
+
     public GameObject livre;
     
     public GameObject deathparticles;
@@ -16,12 +17,28 @@ public class NoyAnimTransition : MonoBehaviour
 
     private int health = 3;
 
-  
+    public AudioSource lit;
+    public AudioSource attaque;
+    public AudioSource souffre;
+    public AudioSource vaincu;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         animnoy = GetComponent<Animator>();
+
+
+        if (Menu.getNoy())
+        {
+            Destroy(this.gameObject);
+        }
+
+        lit.Play();
     }
 
     // Update is called once per frame
@@ -33,14 +50,17 @@ public class NoyAnimTransition : MonoBehaviour
             Debug.Log("Chara closed");
             animnoy.SetBool("IsAttacking", true);
 
-          
+            
 
+           
         }
 
         if (Vector3.Distance(player.position, transform.position) > attackDistance)
         {
             Debug.Log("Chara far");
             animnoy.SetBool("IsAttacking", false);
+
+           
 
         }
 
@@ -71,6 +91,9 @@ public class NoyAnimTransition : MonoBehaviour
             animnoy.SetBool("IsDead", true);
             yield return new WaitForSeconds(1f);
 
+            lit.Stop();
+            vaincu.Play();
+
             Instantiate(deathparticles.gameObject);
             
            
@@ -79,6 +102,10 @@ public class NoyAnimTransition : MonoBehaviour
         {
             Debug.Log("YES degat");
             animnoy.SetBool("IsHurt", true);
+
+            lit.Stop();
+            souffre.Play();
+
             yield return new WaitForSeconds(1f);
             animnoy.SetBool("IsHurt", false);
         }

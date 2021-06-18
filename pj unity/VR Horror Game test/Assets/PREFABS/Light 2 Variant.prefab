@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 7259811831505793588, guid: c76a8c5863f39684ba055dcd3aa0fb5f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.038
+      value: 1.108
       objectReference: {fileID: 0}
     - target: {fileID: 7259811831505793588, guid: c76a8c5863f39684ba055dcd3aa0fb5f,
         type: 3}
@@ -100,7 +100,7 @@ PrefabInstance:
     - target: {fileID: 7259811831505793591, guid: c76a8c5863f39684ba055dcd3aa0fb5f,
         type: 3}
       propertyPath: m_Name
-      value: Light 2
+      value: Light 2 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c76a8c5863f39684ba055dcd3aa0fb5f, type: 3}

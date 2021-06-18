@@ -17,13 +17,26 @@ public class BarghAnimTransition : MonoBehaviour
 
     public GameObject death;
 
-   
+    public AudioSource calme;
+    public AudioSource vener;
+    public AudioSource happy;
 
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     void Start()
     {
         animbargh = GetComponent<Animator>();
+
+        if (Menu.getBargh())
+        {
+            Destroy(this.gameObject);
+        }
+
+        calme.Play();
     }
 
     
@@ -41,6 +54,7 @@ public class BarghAnimTransition : MonoBehaviour
             StartCoroutine(GetDawin());
 
             
+            
         }
 
         if (other.gameObject.CompareTag("FalseCard"))
@@ -55,6 +69,7 @@ public class BarghAnimTransition : MonoBehaviour
             Falsecard2.SetActive(false);
             Falsecard3.SetActive(false);
 
+            
 
         }
 
@@ -68,9 +83,9 @@ public class BarghAnimTransition : MonoBehaviour
         yield return new WaitForSeconds(2f);
         animbargh.SetBool("IsWinning", true);
         Instantiate(death.gameObject);
-        
-        
-        
+
+        happy.Play();
+        calme.Stop();
     }
 
 
@@ -81,13 +96,18 @@ public class BarghAnimTransition : MonoBehaviour
         animbargh.SetBool("IsAttacking", true);
         StartCoroutine(DeathScene());
 
+        calme.Stop();
+        vener.Play();
+        
+        
+        
     }
 
     IEnumerator DeathScene()
     {
-        
+        yield return new WaitForSeconds(1);
         Instantiate(gameOver.gameObject);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("Room2");
     }
 
