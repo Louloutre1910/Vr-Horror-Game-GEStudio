@@ -4820,6 +4820,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &9122572184546420517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3032017659845759499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2568445, y: 5.6901736, z: 2.1126602}
+  m_Center: {x: -3.3230417, y: 0.23991251, z: 0.1056013}
 --- !u!114 &7774448952665647932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4894,19 +4907,6 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
---- !u!65 &9122572184546420517
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3032017659845759499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2568445, y: 5.6901736, z: 2.1126602}
-  m_Center: {x: -3.3230417, y: 0.23991251, z: 0.1056013}
 --- !u!1 &5575487485291505590
 GameObject:
   m_ObjectHideFlags: 0
@@ -9820,6 +9820,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -3454553190370128234, guid: f3dbb9a69595e9e43bf7aa7718941643,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67981db1d33095e40a9bc4de2bad0e9d, type: 2}
     - target: {fileID: 919132149155446097, guid: f3dbb9a69595e9e43bf7aa7718941643,
         type: 3}
       propertyPath: m_Name
