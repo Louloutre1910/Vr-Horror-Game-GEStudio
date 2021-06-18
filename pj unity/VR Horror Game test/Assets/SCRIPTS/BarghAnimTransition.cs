@@ -17,13 +17,16 @@ public class BarghAnimTransition : MonoBehaviour
 
     public GameObject death;
 
-    // Start is called before the first frame update
+   
+
+
+
     void Start()
     {
         animbargh = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    
     void OnTriggerEnter(Collider other)
     {
 
@@ -65,6 +68,7 @@ public class BarghAnimTransition : MonoBehaviour
         yield return new WaitForSeconds(2f);
         animbargh.SetBool("IsWinning", true);
         Instantiate(death.gameObject);
+        
         
         
     }
